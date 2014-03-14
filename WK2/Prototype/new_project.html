@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+
+    <title>Devrea, Create New Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="container">
+
+    <header>
+        <img src="images/logo.png" alt="Devrea Logo">
+<div id="logout">
+            <a href="main.html">Logout</a>
+        </div>
+
+
+    </header>
+    <div id="projects">
+        <h3>New Project</h3>
+    </div>
+
+
+    <div id="newProject">
+
+
+
+        <form id="projectform" name="projectform" method="post">
+            <ul>
+                <li class="form">
+                    <label>Project Name</label>
+                    <input type="text" name="projectname" id="projectname" class="words required" placeholder=""/>
+                    <label class="reqs" id="projectname_req"></label>
+                    <span class="errors" id="projectname_error"></span>
+                </li>
+                <li class="form">
+                    <label>Description Name</label>
+                    <input type="desc" name="desc" id="description" class="words required" placeholder="Description"/>
+                    <label class="reqs" id="desc_req"></label>
+                    <span class="errors" id="desc_error"></span>
+                </li>
+                <li class="form">
+                    <label>Due Date</label>
+                    <input type="date" name="date" id="date" class="required date" placeholder="MM/DD/YYYY"/>
+                    <label class="reqs" id="date_req"></label>
+                    <span class="errors" id="date_error"></span>
+                </li>
+                <li class="form">
+                    <label>Project Status</label>
+
+                    <select>
+                        <option value="select">Select from Drop Down</option>
+                        <option value="urgent">Urgent</option>
+                        <option value="normal">Normal</option>
+                        <option value="delayed">Delayed</option>
+                        <option value="finished">Finished</option>
+                    </select>
+                </li>
+
+            </ul>
+         </form>
+
+        <div id="newProjectBtns">
+            <button type="submit" value="Submit" id="cancel"><a href="project_page.html">Cancel</a></button>
+            <button type="submit" value="Submit" id="finish"><a href="project_page.html">Finish</a></button>
+        </div>
+
+    </div>
+
+
+
+    <footer>Devrea Network 2014</footer>
+
+</div>
+</body>
+</html>

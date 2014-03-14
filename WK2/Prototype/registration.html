@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <meta charset="utf-8"/>
+
+    <title>Devrea, Registration</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+<div id="container">
+    <header>
+        <img src="images/logo.png" alt="Devrea Logo">
+<h2>Registration Page</h2>
+    </header>
+
+    <div id="registration">
+        <form id="regform" name="regform" method="post">
+            <ul>
+                <li class="form">
+
+                    <input type="text" name="username" id="username" class="words required" placeholder="Username"/>
+                    <label class="reqs" id="username_req"></label>
+                    <span class="errors" id="username_error">Example: John Doe</span>
+                </li>
+                <li class="form">
+                    <input type="password" name="password" id="password" class="password words required" placeholder="Password"/>
+                    <label class="reqs" id="password_req"></label>
+                    <div id="pmeter"><div id="pbar"></div></div>
+                    <span class="errors" id="password_error"></span>
+                </li>
+                <li class="form">
+                    <input type="text" name="email" id="email" class="required email" placeholder="Email Address"/>
+                    <label class="reqs" id="email_req"></label>
+                    <span class="errors" id="email_error">Example: user@domain.com</span>
+                </li>
+                <li class="form">
+                    <input type="text" name="phone" id="phone" class="phone" placeholder="Phone Number"/>
+                    <label class="reqs" id="phone_req"></label>
+                    <span class="errors" id="phone_error">Match this format: (123)456-7890</span>
+                </li>
+
+            </ul>
+
+        </form>
+
+        <div id="note">
+            <h1 class="completer">
+                All Most Done!</h1>
+
+            <button type="submit" value="Submit">Register</button>
+
+        </div>
+    </div>
+
+    <footer>Devrea Network 2014</footer>
+
+</div>
+</body>
+</html>
